@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "JsTaskCardGame",
+			"path": "../../JsTaskCardGame"
+		},
+		{
+			"name": "images",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "JsTaskCardGame"
+	}
+}

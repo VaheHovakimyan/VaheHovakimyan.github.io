@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./card_game.css">
+    <title>Card game</title>
+</head>
+
+<body>
+    <div class="end_game_flex" id="end_game_flex">
+        <div class="end_game" id="end_game">
+            <p class="end_game_text" id="end_game_text">Game end</p>
+            <div class="button_flex">
+                <button class="game_reload" id="game_reload">Try again</button>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <h1 class="game_main_title">Fruit card game</h1>
+        <div class="level_and_turns">
+            <div id="levels">
+                Levels:
+                <select id="select_level" class="select_level" onchange="findOption(this)">
+                    <option value="easy" id="option">Easy</option>
+                    <option value="middle" id="option">Middle</option>
+                    <option value="hard" id="option">Hard</option>
+                </select>
+            </div>
+            <button class="open_all_cards" id="open_all_cards" onclick="OpenAllCards()">Open all cards</button>
+            <div class="turns" id="turns">
+                <p class="turns_text" id="turns_text">Turns:</p>
+            </div>
+        </div>
+
+        <div class="card_div">
+
+            <div class="card" id="card0" aria-valuenow="0">
+                <div class="card_front"></div>
+                <div class="card_back" id="card_back0"> </div>
+            </div>
+            <div class="card" id="card1" aria-valuenow="1">
+                <div class="card_front"></div>
+                <div class="card_back" id="card_back1"> </div>
+            </div>
+            <div class="card" id="card2" aria-valuenow="2">
+                <div class="card_front"></div>
+                <div class="card_back" id="card_back2"> </div>
+            </div>
+            <div class="card" id="card3" aria-valuenow="3">
+                <div class="card_front"></div>
+                <div class="card_back" id="card_back3"> </div>
+            </div>
+            <div class="card" id="card4" aria-valuenow="4">
+                <div class="card_front"></div>
+                <div class="card_back" id="card_back4"> </div>
+            </div>
+            <div class="card" id="card5" aria-valuenow="5">
+                <div class="card_front"></div>
+                <div class="card_back" id="card_back5"> </div>
+            </div>
+            <div class="card" id="card6" aria-valuenow="6">
+                <div class="card_front"></div>
+                <div class="card_back" id="card_back6"> </div>
+            </div>
+            <div class="card" id="card7" aria-valuenow="7">
+                <div class="card_front"></div>
+                <div class="card_back" id="card_back7"> </div>
+            </div>
+            <div class="card" id="card8" aria-valuenow="8">
+                <div class="card_front"></div>
+                <div class="card_back" id="card_back8"> </div>
+            </div>
+            <div class="card" id="card9" aria-valuenow="9">
+                <div class="card_front"></div>
+                <div class="card_back" id="card_back9"> </div>
+            </div>
+            <div class="card" id="card10" aria-valuenow="10">
+                <div class="card_front"></div>
+                <div class="card_back" id="card_back10"> </div>
+            </div>
+            <div class="card" id="card11" aria-valuenow="11">
+                <div class="card_front"></div>
+                <div class="card_back" id="card_back11"> </div>
+            </div>
+            <div class="card" id="card12" aria-valuenow="12">
+                <div class="card_front"></div>
+                <div class="card_back" id="card_back12"> </div>
+            </div>
+            <div class="card" id="card13" aria-valuenow="13">
+                <div class="card_front"></div>
+                <div class="card_back" id="card_back13"> </div>
+            </div>
+            <div class="card" id="card14" aria-valuenow="14">
+                <div class="card_front"></div>
+                <div class="card_back" id="card_back14"> </div>
+            </div>
+            <div class="card" id="card15" aria-valuenow="15">
+                <div class="card_front"></div>
+                <div class="card_back" id="card_back15"> </div>
+            </div>
+            <div class="card" id="card16" aria-valuenow="16">
+                <div class="card_front"></div>
+                <div class="card_back" id="card_back16"> </div>
+            </div>
+            <div class="card" id="card17" aria-valuenow="17">
+                <div class="card_front"></div>
+                <div class="card_back" id="card_back17"> </div>
+            </div>
+            <div class="card" id="card18" aria-valuenow="18">
+                <div class="card_front"></div>
+                <div class="card_back" id="card_back18"> </div>
+            </div>
+            <div class="card" id="card19" aria-valuenow="19">
+                <div class="card_front"></div>
+                <div class="card_back" id="card_back19"> </div>
+            </div>
+            <div class="card" id="card20" aria-valuenow="20">
+                <div class="card_front"></div>
+                <div class="card_back" id="card_back20"> </div>
+            </div>
+            <div class="card" id="card21" aria-valuenow="21">
+                <div class="card_front"></div>
+                <div class="card_back" id="card_back21"> </div>
+            </div>
+            <div class="card" id="card22" aria-valuenow="22">
+                <div class="card_front"></div>
+                <div class="card_back" id="card_back22"> </div>
+            </div>
+            <div class="card" id="card23" aria-valuenow="23">
+                <div class="card_front"></div>
+                <div class="card_back" id="card_back23"> </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./card_game.js"></script>
+</body>
+
+</html>
